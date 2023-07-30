@@ -1,3 +1,5 @@
 pages:
   home:
     title: "Welcome to our website"
+    welcome: 'Hello'
+    

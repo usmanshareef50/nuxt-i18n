@@ -2,7 +2,6 @@
 const { locale, locales, setLocaleCookie } = useI18n();
 
 watch(locale, (newValue, oldValue) => {
-  console.warn('Lang switcher working...');
   setLocaleCookie(newValue);
 });
 </script>
@@ -10,7 +9,7 @@ watch(locale, (newValue, oldValue) => {
   <form>
     <select v-model="locale">
       <option v-for="lang in locales" :value="lang.code">
-        {{ lang.name }}
+        {{ lang.name }}  
       </option>
     </select>
   </form>
